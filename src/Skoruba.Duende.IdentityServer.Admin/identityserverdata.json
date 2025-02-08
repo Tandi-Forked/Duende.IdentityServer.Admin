@@ -84,7 +84,7 @@
             {
                 "ClientId": "skoruba_identity_admin",
                 "ClientName": "skoruba_identity_admin",
-                "ClientUri": "https://localhost:44303",
+                "ClientUri": "https://learningauth-admin.azurewebsites.net",
                 "AllowedGrantTypes": [
                     "authorization_code"
                 ],
@@ -95,13 +95,16 @@
                     }
                 ],
                 "RedirectUris": [
+                    "https://learningauth-admin.azurewebsites.net/signin-oidc",
                     "https://localhost:44303/signin-oidc"
                 ],
-                "FrontChannelLogoutUri": "https://localhost:44303/signout-oidc",
+                "FrontChannelLogoutUri": "https://learningauth-admin.azurewebsites.net/signout-oidc",
                 "PostLogoutRedirectUris": [
+                    "https://learningauth-admin.azurewebsites.net/signout-callback-oidc",
                     "https://localhost:44303/signout-callback-oidc"
                 ],
                 "AllowedCorsOrigins": [
+                    "https://learningauth-admin.azurewebsites.net",
                     "https://localhost:44303"
                 ],
                 "AllowedScopes": [
